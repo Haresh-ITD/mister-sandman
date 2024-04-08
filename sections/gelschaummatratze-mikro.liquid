@@ -1,0 +1,229 @@
+
+{% schema %}
+{
+	"name": "gelschaummatratze-mikro",
+	"settings": [
+		
+		{
+			"type":"header",
+			"content":"Produktdetails",
+			"info":"In this block you can set the Produktdetails"
+		},
+		{
+			"type":"textarea",
+			"id":"gelschaummatratze-mikro-textbloc-1",
+			"label":"gelschaummatratze-mikro Text bloc 1"
+		},
+
+
+		{
+			"type":"header",
+			"content":"Lieferung & Versand",
+			"info":"In this block you can set the Lieferung & Versand content."
+		},
+		{
+			"type":"textarea",
+			"id":"gelschaummatratze-mikro-textbloc-2",
+			"label":"gelschaummatratze-mikro Text bloc 2"
+		},
+        {
+			"type":"header",
+			"content":"SecondText",
+			"info":"In this block you can set the content for the second block."
+		},
+		{
+			"type":"textarea",
+			"id":"gelschaummatratze-mikro-textbloc-3",
+			"label":"gelschaummatratze-mikro Text bloc 3"
+		},
+        {
+			"type":"text",
+			"id":"gelschaummatratze-mikro-bloc2-imageurl-1",
+			"label":"gelschaummatratze-mikro-Image-Url-1"
+		}
+
+
+
+	]
+}
+{% endschema %}
+{% assign current_url = product.url | replace: '/' | replace: 'products' %}
+{% if current_url == 'gelschaummatratze-mikro' or current_url contains "gelschaummatratze-mikrofaserbezug" %}
+<style>
+  
+.topnav {
+  overflow: hidden;
+  padding-left: 60px;
+}
+
+.topnav button {
+  color: #1b1464;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-size: 25px;
+  font-family: montserrat;
+  font-weight: 500;
+ 
+}
+
+.topnav button:hover {
+  border-bottom: 3px solid #1b1464;
+}
+
+.topnav button.active {
+  border-bottom: 3px solid #1b1464;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+}
+
+#bloc1 {
+  display: block;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+ //font-family: montserrat;
+ font-weight: normal;
+ color:#1e1664;
+ 
+}
+#bloc2 {
+ display: none;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+// font-family: montserrat;
+ font-weight: normal;
+}
+  
+#bloc3 {
+ position: relative;
+// font-family: montserrat;
+ font-weight: normal; 
+}
+  
+.picture {
+ position: relative;
+ left: 50%;
+}
+  
+  
+  
+.textContent{
+
+  font-size: 18px;
+
+} 
+  
+  
+  
+  
+
+.textContent{
+
+  width:40%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:-100px;
+  //font-family: montserrat;
+  font-weight: normal;
+
+}
+
+  <!-- change picture settings here -->
+.responsive {
+  width: 50%;
+  height: auto;
+} 
+  
+.pictureStatic {
+  position: relative;
+  /* left:50%; */
+  top:-140px;
+  width:100%;
+  overflow:scroll;
+  
+}
+
+  .staticBlock {
+  
+  height:700px;
+  
+  
+  }
+ 
+</style>
+
+<hr>  
+<div class="topnav" id="myDIV">
+  <button class="btn active" id="Produktd" onclick="myFunction()">Produktdetails</button>
+  <button class="btn" id="lieferVers" onclick="myFunction2()">Lieferung und Versand</button>
+</div>
+<hr>  
+<div id="bloc1" class="responsive-bloc stretch whole">
+<!-- {{ section.settings.gelschaummatratze-mikro-textbloc-1 }}-->
+ </div>
+<div id="bloc2" class="responsive-bloc stretch whole">
+ <!--{{ section.settings.gelschaummatratze-mikro-textbloc-2 }}-->
+  <style>  .firstList {  position: relative;    height: 150px;  width: 27%;}  .secondList {  position: relative;  left: 30%;  top:-195px;  height: 150px;  width: 27%;}  .thirdList {  position: relative;  left: 65%;  top:-390px;  height: 150px;  width: 27%;}</style><div class="firstList"><ul><h6>Lieferzeit</h6>   <li>Nach Zahlungseingang wird Deine Bestellung schnellstmöglich bearbeitet. </li><br>   <li>Die auf der Produktseite angegebene Lieferzeit wird ständig aktualisiert, um ein möglichst genaues Lieferdatum zu garantieren.</li></ul></div><div class="secondList">   <ul><h6>Versand und Retoure</h6>      <li> Der Versand ist innerhalb Deutschlands kostenfrei. </li><br>      <li>Bei Bestellungen aus dem europäischen Ausland werden die Versandkosten während des Kaufvorgangs angezeigt.. </li><br>      <li>Nach Erhalt der Ware hast du ein 14-tägiges Rückgaberecht. </li><br>      <li>Die Kosten für die Retoure werden vom Kunden getragen. </li><br>      <li>Bei der Abwicklung der Rücksendung ist Dir unser Service-Team gerne behilflich.</li>   </ul>   </div>   <div class="thirdList">   <ul> <h6>Verpackung</h6>      <li> Deine neue Matratze wird gerollt in einer Transporttüte geliefert. So wird unnötiger Verpackungsmüll vermieden. Im verpackten Zustand ist die Matratze außerdem sehr leicht zu transportieren, da auch große Größen gefalten und gerollt werden. </li><br>      <li>Das Paket ist, unabhängig von der Größe, immer 100 cm hoch. Die Größe Deiner Matratze ist auf dem an der Verpackung angebrachtem Etikett vermerkt. </li><br>      <li>Die Matratze erreicht max. 48h nach dem Auspacken ihre vollständige Größe.</li>   </ul> </div>
+</div> 
+<hr> 
+
+
+<div class="staticBlock">
+  <div class="textContent">
+    <p>
+     <!-- {{ section.settings.gelschaummatratze-mikro-textbloc-3 }} -->
+    </p> 
+  </div>
+  <div class="pictureStatic">
+   <!-- {{ section.settings.gelschaummatratze-mikro-bloc2-imageurl-1 }}-->
+    <img src="https://cdn.shopify.com/s/files/1/1563/5705/files/gelschaummatratze-kaltschaum-gelschaum-140x200.jpg?v=1596120579" class="responsive" width="500" height="500" >
+  </div>  
+</div>  
+
+<hr>
+
+<script>
+ var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+function myFunction() {
+   var x = document.getElementById('bloc1');
+   var y = document.getElementById('bloc2');
+    
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+ 
+ 
+}
+
+function myFunction2() {
+
+    var x = document.getElementById('bloc2');
+    var y = document.getElementById('bloc1');
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+
+  
+}
+</script>
+{% endif %}

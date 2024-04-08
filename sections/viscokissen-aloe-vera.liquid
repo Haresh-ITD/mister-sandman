@@ -1,0 +1,279 @@
+
+{% schema %}
+{
+	"name": "viscokissen-aloe-vera",
+	"settings": [
+		
+		{
+			"type":"header",
+			"content":"Produktdetails",
+			"info":"In this block you can set the Produktdetails"
+		},
+		{
+			"type":"textarea",
+			"id":"viscokissen-aloe-vera-textbloc-1",
+			"label":"viscokissen-aloe-vera Text bloc 1"
+		},
+
+
+		{
+			"type":"header",
+			"content":"Lieferung & Versand",
+			"info":"In this block you can set the Lieferung & Versand content."
+		},
+		{
+			"type":"textarea",
+			"id":"viscokissen-aloe-vera-textbloc-2",
+			"label":"viscokissen-aloe-vera Text bloc 2"
+		},
+        {
+			"type":"header",
+			"content":"SecondText",
+			"info":"In this block you can set the content for the second block."
+		},
+		{
+			"type":"textarea",
+			"id":"viscokissen-aloe-vera-textbloc-3",
+			"label":"viscokissen-aloe-vera Text bloc 3"
+		},
+        {
+			"type":"text",
+			"id":"viscokissen-aloe-vera-bloc2-imageurl-1",
+			"label":"viscokissen-aloe-vera-Image-Url-1"
+		}
+
+
+
+	]
+}
+{% endschema %}
+{% assign current_url = product.url | replace: '/' | replace: 'products' %}
+{% if current_url == 'viscokissen-aloe-vera' %}
+<style>
+  
+.topnav {
+  overflow: hidden;
+  padding-left: 60px;
+}
+
+.topnav button {
+  color: #1b1464;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-size: 25px;
+  font-family: montserrat;
+  font-weight: 500;
+ 
+}
+
+.topnav button:hover {
+  border-bottom: 3px solid #1b1464;
+}
+
+.topnav button.active {
+  border-bottom: 3px solid #1b1464;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+}
+
+#bloc1 {
+  display: block;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+ //font-family: montserrat;
+ font-weight: normal;
+ color:#1e1664;
+ 
+}
+#bloc2 {
+ display: none;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+ //font-family: montserrat;
+ font-weight: normal;
+}
+  
+#bloc3 {
+ position: relative;
+ font-family: montserrat;
+ font-weight: normal; 
+}
+  
+.picture {
+ position: relative;
+ left: 50%;
+}
+  
+  
+  
+.textContent{
+
+  font-size: 18px;
+
+} 
+  
+  
+  
+  
+
+.textContent{
+
+  width:40%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:-100px;
+ // font-family: montserrat;
+  font-weight: normal;
+
+}
+
+  <!-- change picture settings here -->
+.responsive {
+  width: 50%;
+  height: auto;
+} 
+  
+.pictureStatic {
+  position: relative;
+  left:60%;
+  top:-230px;
+  
+}
+
+  .staticBlock {
+  
+  height:700px;
+  
+  
+  }
+  
+    @media (max-width: 1000px) {
+
+   .staticBlock {
+  height:auto;
+  
+} 
+  .pictureStatic {
+  position: relative;
+  left:0%;
+  top:0px;
+  
+}
+.responsive {
+  width: 100%;
+  height: auto;
+} 
+  
+.textContent{
+
+  width:100%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:0px;
+ // font-family: montserrat;
+  font-weight: normal;
+}
+  
+  .topnav button {
+  color: white;
+  background-color: #1b1464;
+  border: 2px solid #1b1464;
+  padding: 5px 3px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: montserrat;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 10px;
+ 
+}
+  
+  .topnav {
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+
+}
+ 
+</style>
+
+<hr>  
+<div class="topnav" id="myDIV">
+  <button class="btn active" id="Produktd" onclick="myFunction()">Produktdetails</button>
+  <button class="btn" id="lieferVers" onclick="myFunction2()">Lieferung und Versand</button>
+</div>
+<hr>  
+<div id="bloc1" class="responsive-bloc stretch whole">
+  <ul><h6> Eigenschaften & Material </h6><li> Nackenstützkissen für hohen Liegekomfort</li><li>Hautfreundlicher Kissenbezug mit Aloe Vera Fasern</li> <li>Weiches Liegegefühl und sehr gute stützende Eigenschaften</li>  <li>Material Viscoschaum / Memory Foam</li><li> Maße 40x80x12   </li><li>Antiallergisch und milbensicher</li> </ul><br>
+ <!--{{ section.settings.viscokissen-aloe-vera-textbloc-1 }}-->
+ </div>
+<div id="bloc2" class="responsive-bloc stretch whole">
+  <style>  .firstList {  position: relative;    height: 150px;  width: 27%;}  .secondList {  position: relative;  left: 30%;  top:-195px;  height: 150px;  width: 27%;}  .thirdList {  position: relative;  left: 65%;  top:-390px;  height: 150px;  width: 27%;}@media (max-width: 1000px) {.firstList {  position: relative;    height: auto;  width: 100%;}  .secondList {  position: relative;  left: 0%;  top:0px;  height: auto;  width: 100%;}  .thirdList {  position: relative;  left: 0%;  top:0px;  height: auto;  width: 100%;}}</style><div class=\"firstList\"><ul><h6>Lieferzeit</h6>   <li>Nach Zahlungseingang wird Deine Bestellung schnellstmöglich bearbeitet. </li><br>   <li>Die auf der Produktseite angegebene Lieferzeit wird ständig aktualisiert, um ein möglichst genaues Lieferdatum zu garantieren.</li></ul></div><div class=\"secondList\">   <ul><h6>Versand und Retoure</h6>      <li> Der Versand ist innerhalb Deutschlands kostenfrei. </li><br>      <li>Bei Bestellungen aus dem europäischen Ausland werden die Versandkosten während des Kaufvorgangs angezeigt.. </li><br>      <li>Nach Erhalt der Ware hast du ein 14-tägiges Rückgaberecht. </li><br>      <li>Die Kosten für die Retoure werden vom Kunden getragen. </li><br>      <li>Bei der Abwicklung der Rücksendung ist Dir unser Service-Team gerne behilflich.</li>   </ul>   </div>   <div class=\"thirdList\">   <ul>  <br>          </ul> </div>
+ <!--{{ section.settings.viscokissen-aloe-vera-textbloc-2 }}-->
+</div> 
+<hr> 
+
+
+<div class="staticBlock">
+  <div class="textContent">
+    <p>
+    <div><h6>Dein neues Wohlfühlkissen </h6>  Genieße erholsame Nächte mit dem Mister Sandman Nackenstützkissen aus Visco mit feuchtigkeitspendendem Aloe Vera Bezug. Mit diesem Kissen schläfst du noch ein bisschen besser. Hochgradig anpassungsfähiger Viscoschaum schmiegt sich punktgenau an Deinen Kopf und Nacken an und wirkt so druckentlastend. Du liegst wunderbar weich und musst dennoch nicht auf Stützung verzichten. </div>
+      <!--{{ section.settings.viscokissen-aloe-vera-textbloc-3 }} -->
+    </p> 
+  </div>
+  <div class="pictureStatic">
+    <!--{{ section.settings.viscokissen-aloe-vera-bloc2-imageurl-1 }}-->
+    <img src="https://cdn.shopify.com/s/files/1/1563/5705/files/Aloe_Vera_Kissen-Interior-2_-_Kopie_fc98e95a-e821-4f3d-8475-68822bcdfb99.jpg?v=1584095788" class="responsive" width="500" height="500" >
+  </div>  
+</div>  
+
+<hr>
+
+<script>
+ var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+function myFunction() {
+   var x = document.getElementById('bloc1');
+   var y = document.getElementById('bloc2');
+    
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+ 
+ 
+}
+
+function myFunction2() {
+
+    var x = document.getElementById('bloc2');
+    var y = document.getElementById('bloc1');
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+
+  
+}
+</script>
+{% endif %}

@@ -1,0 +1,275 @@
+
+{% schema %}
+{
+	"name": "babymatratze",
+	"settings": [
+		
+		{
+			"type":"header",
+			"content":"Produktdetails",
+			"info":"In this block you can set the Produktdetails"
+		},
+		{
+			"type":"textarea",
+			"id":"babymatratze-textbloc-1",
+			"label":"babymatratze Text bloc 1"
+		},
+		{
+			"type":"header",
+			"content":"Lieferung & Versand",
+			"info":"In this block you can set the Lieferung & Versand content."
+		},
+		{
+			"type":"textarea",
+			"id":"babymatratze-textbloc-2",
+			"label":"babymatratze Text bloc 2"
+		},
+        {
+			"type":"header",
+			"content":"SecondText",
+			"info":"In this block you can set the content for the second block."
+		},
+		{
+			"type":"textarea",
+			"id":"babymatratze-textbloc-3",
+			"label":"babymatratze Text bloc 3"
+		},
+        {
+			"type":"text",
+			"id":"babymatratze-bloc2-imageurl-1",
+			"label":"babymatratze-Image-Url-1"
+		}
+
+
+
+	]
+}
+{% endschema %}
+{% assign current_url = product.url | replace: '/' | replace: 'products' %}   
+{% if current_url == 'babymatratze' or current_url contains "babymatratze" %}
+<style>
+  
+.topnav {
+  overflow: hidden;
+  padding-left: 60px;
+}
+
+.topnav button {
+  color: #1b1464;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-size: 25px;
+  font-family: montserrat;
+  font-weight: 500;
+ 
+}
+
+.topnav button:hover {
+  border-bottom: 3px solid #1b1464;
+}
+
+.topnav button.active {
+  border-bottom: 3px solid #1b1464;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+}
+
+#bloc1 {
+  display: block;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+ //font-family: montserrat;
+ font-weight: normal;
+ color:#1e1664;
+ 
+}
+#bloc2 {
+ display: none;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+ //font-family: montserrat;
+ font-weight: normal;
+}
+  
+#bloc3 {
+ position: relative;
+ //font-family: montserrat;
+ font-weight: normal; 
+}
+  
+.picture {
+ position: relative;
+ left: 50%;
+}
+  
+  
+  
+.textContent{
+
+  font-size: 18px;
+
+} 
+  
+  
+  
+  
+
+.textContent{
+
+  width:40%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:-100px;
+ // font-family: montserrat;
+  font-weight: normal;
+}
+
+  <!-- change picture settings here -->
+.responsive {
+  width: 50%;
+  height: auto;
+} 
+  
+.pictureStatic {
+  position: relative;
+  left:60%;
+  top:-230px;
+  
+}
+
+  .staticBlock {
+  
+  height:700px;
+  
+  
+  }
+  
+  
+    
+@media (max-width: 1000px) {
+
+  
+  .pictureStatic {
+  position: relative;
+  left:0%;
+  top:200px;
+  
+}
+.responsive {
+  width: 100%;
+  height: auto;
+} 
+  
+.textContent{
+
+  width:100%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:-100px;
+  //font-family: montserrat;
+  font-weight: normal;
+}
+  
+  .topnav button {
+  color: white;
+  background-color: #1b1464;
+  border: 2px solid #1b1464;
+  padding: 5px 3px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: montserrat;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 10px;
+ 
+}
+  
+  .topnav {
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+
+}
+ 
+</style>
+
+<hr>  
+<div class="topnav" id="myDIV">
+  <button class="btn active" id="Produktd" onclick="myFunction()">Produktdetails</button>
+  <button class="btn" id="lieferVers" onclick="myFunction2()">Lieferung und Versand</button>
+</div>
+<hr>  
+<div id="bloc1" class="responsive-bloc stretch whole">
+ <!--{{ section.settings.babymatratze-textbloc-1 }}-->
+  <ul><h4> Eigenschaften & Material </h4><li>Punktelastische und mittelweiche Schlafunterlage für Babys und Kleinkinder</li><li>Matratzenkern aus Kaltschaum </li> <li>Gesamthöhe ca. 5 cm </li>  <li>Offenporiger Kaltschaum sorgt für Atmungsaktivität, während der Matratzenkern die Körperwärme speichert </li> <li>Hautsymphatischer und pflegeleichter Bezug aus Mikrofaser </li><li> Abnehmbarer und bei bis zu 60 Grad waschbarer Bezug</li>  <li>Made in Germany</li> <li>Einsatzbereit 2 h nach dem Auspacken, Lieferung als Rollmatratze</li> </ul><br>
+ </div>
+<div id="bloc2" class="responsive-bloc stretch whole">
+ <!--{{ section.settings.babymatratze-textbloc-2 }}-->
+  <style>  .firstList {  position: relative;    height: 150px;  width: 27%;}  .secondList {  position: relative;  left: 30%;  top:-195px;  height: 150px;  width: 27%;}  .thirdList {  position: relative;  left: 65%;  top:-380px;  height: 230px;  width: 27%;}@media (max-width: 1000px) {.firstList {  position: relative;    height: auto;  width: 100%;}  .secondList {  position: relative;  left: 0%;  top:0px;  height: auto;  width: 100%;}  .thirdList {  position: relative;  left: 0%;  top:0px;  height: auto;  width: 100%;}}</style><div class=\"firstList\"><ul><h4>Lieferzeit</h4>   <li>Nach Zahlungseingang wird Deine Bestellung schnellstmöglich bearbeitet. </li><br>   <li>Die auf der Produktseite angegebene Lieferzeit wird ständig aktualisiert, um ein möglichst genaues Lieferdatum zu garantieren.</li></ul></div><div class=\"secondList\">   <ul><h4>Versand und Retoure</h4>      <li> Der Versand ist innerhalb Deutschlands kostenfrei. </li><br>      <li>Bei Bestellungen aus dem europäischen Ausland werden die Versandkosten während des Kaufvorgangs angezeigt.. </li><br>      <li>Nach Erhalt der Ware hast du ein 14-tägiges Rückgaberecht. </li><br>      <li>Die Kosten für die Retoure werden vom Kunden getragen. </li><br>      <li>Bei der Abwicklung der Rücksendung ist Dir unser Service-Team gerne behilflich.</li>   </ul>   </div>   <div class=\"thirdList\">   <ul> <h4>Verpackung</h4>      <li> Die Babymatratze wird gerollt in einer Transporttüte geliefert. So wird unnötiger Verpackungsmüll vermieden. Im verpackten Zustand ist die Babymatratze außerdem sehr leicht zu transportieren. Die Matratze wird unbezogen versendet. Der Bezug befindet sich in der Verpackung  </li><br> Die Babymatratze erreicht max. 48h nach dem Auspacken ihre vollständige Größe.   </ul> </div>
+</div> 
+<hr> 
+
+
+<div class="staticBlock">
+  <div class="textContent">
+    <p>
+      <!--{{ section.settings.babymatratze-textbloc-3 }} -->
+    <h4>Kaltschaummatratze für die Kleinsten</h4> Die Babymatratze von Mister Sandman ist nicht zu weich und nicht zu fest und somit optimal auf die Bedürfnisse von Babys und Kleinkindern angepasst. Die Babymatratze ist elastisch und passt sich der Babykörperform optimal an. Atmungsaktive Materialien sorgen für eine gute Luftzirkulation, abnehmbare und pflegeleichte Matratzenbezüge für eine sehr gute Betthygiene. Für ein rundum gutes Gefühl, ist diese Babymatratze auf Schadstoffe geprüft und Öko-Tex zertifiziert.
+    </p> 
+  </div>
+  <div class="pictureStatic">
+    <!--{{ section.settings.babymatratze-bloc2-imageurl-1 }}-->
+    <img src="https://cdn.shopify.com/s/files/1/1563/5705/files/Babymatratze_DT.jpg?v=1596111600" class="responsive" width="600" height="600">
+  </div>  
+</div>  
+
+<hr>
+
+<script>
+ var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+function myFunction() {
+   var x = document.getElementById('bloc1');
+   var y = document.getElementById('bloc2');
+    
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+ 
+ 
+}
+
+function myFunction2() {
+
+    var x = document.getElementById('bloc2');
+    var y = document.getElementById('bloc1');
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+
+  
+}
+</script>
+{% endif %}

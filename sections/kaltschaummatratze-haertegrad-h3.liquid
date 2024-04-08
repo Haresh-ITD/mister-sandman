@@ -1,0 +1,279 @@
+
+{% schema %}
+{
+	"name": "haertegrad-h3",
+	"settings": [
+		
+		{
+			"type":"header",
+			"content":"Produktdetails",
+			"info":"In this block you can set the Produktdetails"
+		},
+		{
+			"type":"textarea",
+			"id":"haertegrad-h3-textbloc-1",
+			"label":"haertegrad-h3 Text bloc 1"
+		},
+
+
+		{
+			"type":"header",
+			"content":"Lieferung & Versand",
+			"info":"In this block you can set the Lieferung & Versand content."
+		},
+		{
+			"type":"textarea",
+			"id":"haertegrad-h3-textbloc-2",
+			"label":"haertegrad-h3 Text bloc 2"
+		},
+        {
+			"type":"header",
+			"content":"SecondText",
+			"info":"In this block you can set the content for the second block."
+		},
+		{
+			"type":"textarea",
+			"id":"haertegrad-h3-textbloc-3",
+			"label":"haertegrad-h3 Text bloc 3"
+		},
+        {
+			"type":"text",
+			"id":"haertegrad-h3-bloc2-imageurl-1",
+			"label":"haertegrad-h3-Image-Url-1"
+		}
+
+
+
+	]
+}
+{% endschema %}
+{% assign current_url = product.url | replace: '/' | replace: 'products' %} 
+{% if current_url == 'kaltschaummatratze-haertegrad-h3' or current_url contains "kaltschaummatratze-h3" or current_url == "kaltschaummatratze-haertegrad-h2-h3"  %}
+<style>
+  
+.topnav {
+  overflow: hidden;
+  padding-left: 60px;
+}
+
+.topnav button {
+  color: #1b1464;
+  padding: 10px 12px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-size: 25px;
+  font-family: montserrat;
+  font-weight: 500;
+ 
+}
+
+.topnav button:hover {
+  border-bottom: 3px solid #1b1464;
+}
+
+.topnav button.active {
+  border-bottom: 3px solid #1b1464;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+}
+
+#bloc1 {
+  display: block;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+ //font-family: montserrat;
+ font-weight: normal;
+ color:#1e1664;
+ 
+}
+#bloc2 {
+ display: none;
+  position: relative;
+ left: 2%;
+ font-size: 18px;
+// font-family: montserrat;
+ font-weight: normal;
+}
+  
+#bloc3 {
+ position: relative;
+// font-family: montserrat;
+ font-weight: normal; 
+}
+  
+.picture {
+ position: relative;
+ left: 50%;
+}
+  
+  
+  
+.textContent{
+
+  font-size: 18px;
+
+} 
+  
+  
+  
+  
+
+.textContent{
+
+  width:40%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:-100px;
+ // font-family: montserrat;
+  font-weight: normal;
+
+}
+
+  <!-- change picture settings here -->
+.responsive {
+  width: 50%;
+  height: auto;
+} 
+  
+.pictureStatic {
+  position: relative;
+  left:50%;
+  top:-200px;
+  
+}
+
+  .staticBlock {
+  
+  height:700px;
+  
+  
+  }
+  
+    @media (max-width: 1000px) {
+
+   .staticBlock {
+  height:auto;
+  
+} 
+  .pictureStatic {
+  position: relative;
+  left:0%;
+  top:0px;
+  
+}
+.responsive {
+  width: 100%;
+  height: auto;
+} 
+  
+.textContent{
+
+  width:100%;
+  height:30%;
+  position: relative;
+  left:4%;
+  bottom:0px;
+ // font-family: montserrat;
+  font-weight: normal;
+}
+  
+  .topnav button {
+  color: white;
+  background-color: #1b1464;
+  border: 2px solid #1b1464;
+  padding: 5px 3px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: montserrat;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 10px;
+ 
+}
+  
+  .topnav {
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+
+}
+ 
+</style>
+
+<hr>  
+<div class="topnav" id="myDIV">
+  <button class="btn active" id="Produktd" onclick="myFunction()">Produktdetails</button>
+  <button class="btn" id="lieferVers" onclick="myFunction2()">Lieferung und Versand</button>
+</div>
+<hr>  
+<div id="bloc1" class="responsive-bloc stretch whole">
+ <!--{{ section.settings.haertegrad-h3-textbloc-1 }}-->
+  <ul><h4> Eigenschaften & Material </h4><li>Kaltschaummatratze mit Härtegrad H3 </li><li>Matratzenkern mit 7 Liegezonen/Körperzonen. </li> <li>Gesamthöhe ca. 15 cm </li>  <li>Matratzenbezug aus hochwertigem Doppeltuch (100% Polyester),Reißverschluss, waschbar bei bis zu 60 Grad </li> <li>Atmungsaktive Materialien für ein angenehmes Schlafklima </li> <li>Einsatzbereit 2 h nach dem Auspacken, Lieferung als Rollmatratze</li> </ul><br>
+ </div>
+<div id="bloc2" class="responsive-bloc stretch whole">
+ <!--{{ section.settings.haertegrad-h3-textbloc-2 }}-->
+  <style>  .firstList {  position: relative;    height: 150px;  width: 27%;}  .secondList {  position: relative;  left: 30%;  top:-195px;  height: 150px;  width: 27%;}  .thirdList {  position: relative;  left: 65%;  top:-390px;  height: 150px;  width: 27%;}@media (max-width: 1000px) {.firstList {  position: relative;    height: auto;  width: 100%;}  .secondList {  position: relative;  left: 0%;  top:0px;  height: auto;  width: 100%;}  .thirdList {  position: relative;  left: 0%;  top:0px;  height: auto;  width: 100%;}}</style><div class=\"firstList\"><ul><h6>Lieferzeit</h6>   <li>Nach Zahlungseingang wird Deine Bestellung schnellstmöglich bearbeitet. </li><br>   <li>Die auf der Produktseite angegebene Lieferzeit wird ständig aktualisiert, um ein möglichst genaues Lieferdatum zu garantieren.</li></ul></div><div class=\"secondList\">   <ul><h6>Versand und Retoure</h6>      <li> Der Versand ist innerhalb Deutschlands kostenfrei. </li><br>      <li>Bei Bestellungen aus dem europäischen Ausland werden die Versandkosten während des Kaufvorgangs angezeigt.. </li><br>      <li>Nach Erhalt der Ware hast du ein 14-tägiges Rückgaberecht. </li><br>      <li>Die Kosten für die Retoure werden vom Kunden getragen. </li><br>      <li>Bei der Abwicklung der Rücksendung ist Dir unser Service-Team gerne behilflich.</li>   </ul>   </div>   <div class=\"thirdList\">   <ul> <h6>Verpackung</h6>      <li> Deine neue Matratze wird gerollt in einer Transporttüte geliefert. So wird unnötiger Verpackungsmüll vermieden. Im verpackten Zustand ist die Matratze außerdem sehr leicht zu transportieren, da auch große Größen gefalten und gerollt werden. </li><br>      <li>Das Paket ist, unabhängig von der Größe, immer 100 cm hoch. Die Größe Deiner Matratze ist auf dem an der Verpackung angebrachtem Etikett vermerkt. </li><br>      <li>Die Matratze erreicht max. 48h nach dem Auspacken ihre vollständige Größe.</li>   </ul> </div>
+</div> 
+<hr> 
+
+
+<div class="staticBlock">
+  <div class="textContent">
+    <p>
+      <!--{{ section.settings.haertegrad-h3-textbloc-3 }} -->
+    <div><h4>Erholsam schlafen</h4>Egal, ob Du auf dem Bauch, dem Rücken oder auf der Seite schläfst, diese Matratze sorgt durch Punktelastizität und 7 Liegezonen für eine gute Körperanpassung. Schultern und Hüfte sinken leicht in die Matratze ein. Deine Wirbelsäule wird so ergonomisch optimal gestützt und du spürst die druckentlastende Wirkung der Matratze. Diese Kaltschaummatratze ist zudem besonders gut für Schläfer geeignet, die sich nachts viel bewegen.  </div>
+    </p> 
+  </div>
+  <div class="pictureStatic">
+    <!--{{ section.settings.haertegrad-h3-bloc2-imageurl-1 }}-->
+    <img src="https://cdn.shopify.com/s/files/1/1563/5705/files/7-zonen-kaltschaummatratze_323da606-4f23-4404-b763-0720983cbf3f.jpg?v=1598536014" class="responsive" width="500" height="500" >
+  </div>  
+</div>  
+
+<hr>
+
+<script>
+ var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+
+function myFunction() {
+   var x = document.getElementById('bloc1');
+   var y = document.getElementById('bloc2');
+    
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+ 
+ 
+}
+
+function myFunction2() {
+
+    var x = document.getElementById('bloc2');
+    var y = document.getElementById('bloc1');
+
+    x.style.display = 'block';
+    y.style.display = 'none';
+
+  
+}
+</script>
+{% endif %}
