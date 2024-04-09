@@ -3254,7 +3254,7 @@ rgb(255, 255, 255)
   font-size: var(--font-size-body);
   display: block;
   width: 100%;
-  color: #19F;
+  color:red;
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
